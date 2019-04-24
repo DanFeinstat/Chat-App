@@ -1,0 +1,116 @@
+.container {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  min-height: 80vh;
+  padding: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.19), 0 8px 17px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  color: white;
+  background-image: url(../../images/ignLogo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: black;
+  background-position: center;
+}
+
+.commentContainer {
+  height: 60%;
+  min-height: 400px;
+  width: 90%;
+  min-width: 100px;
+  background-color: #faecc9;
+  border-radius: 4px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: none !important;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-height: 500px) {
+  .container {
+    min-height: 90vh;
+  }
+  .commentContainer {
+    min-height: 200px;
+    min-width: 400px;
+  }
+}
+
+@media (max-width: 350px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+  }
+  .commentContainer {
+    min-height: 500px;
+    min-width: 300px;
+  }
+}
+
+.formContainer {
+  height: 30%;
+  width: 80%;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.label {
+  width: 100%;
+}
+
+.input {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 10px;
+  height: 24px;
+  width: 100%;
+  border-radius: 6px;
+  border: solid 1px lightgrey;
+  box-sizing: border-box;
+}
+
+.btnContainer {
+  margin-top: 6%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.btn {
+  width: 64px;
+  height: 32px;
+  margin-left: 4px;
+  margin-right: 4px;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+    0 1px 10px 0 rgba(0, 0, 0, 0.12);
+  transform: scale(1.08);
+}
+
+.navi {
+  background-image: url(../../images/navi.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+@media (max-height: 450px) {
+  .container {
+    min-height: 120vh;
+  }
+}
